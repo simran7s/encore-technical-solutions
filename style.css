@@ -1,0 +1,277 @@
+/* ROBOTO FONT */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+/* CSS VARIABLES */
+:root{
+    --primary: #5ACAEE;
+    --secondary: #FA9F18;
+    --light: #FFFFFF;
+    --dark: #5B5D5D;
+    --primary-light: #ECF0F3;
+    --primary-dark: #045C78;
+    --footer: #5B5D5D;
+    ;
+    
+    /* Default Border Radius */
+    --radius: 21.5px;
+}
+
+/* GENERAL */
+
+*{
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+html{
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.container{
+    /* max-width: 1440px; */
+    margin: auto;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+.inner-container{
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
+
+h2.section-title{
+    color: var(--primary);
+    font-size: 1rem;
+}
+h3.section-heading{
+    color: var(--dark);
+    font-size: 38px;
+    font-weight: 700;
+}
+
+p.section-text{
+    color: var(--dark);
+    font-size: 1rem;
+}
+
+.btn:hover{
+    color: var(--light);
+    transform: scale(1.1);
+}
+
+/* *************** */
+/* **** SPLASH *** */
+/* *************** */
+.landing{
+    background-image: url(./assets/hero-section-background.jpg);
+    background-position-x: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* *************** */
+/* ***** NAV ***** */
+/* *************** */
+nav .navbar-nav{
+    margin: 3rem 4rem;
+}
+
+nav .navbar-nav .nav-item{
+    margin: 0 1rem; 
+}
+
+nav .nav-item a{
+    color: var(--light);
+    transition: border-bottom 100ms ease-in;
+    border-bottom: 1px solid transparent;
+}
+
+nav .nav-item a:hover{
+    color:  var(--secondary);
+    border-bottom: 1px solid var(--secondary);
+}
+
+.btn-contact{
+    background-color: var(--secondary);
+    color: var(--light);
+    border-radius: var(--radius);
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+/* *************** */
+/* ***** HOME **** */
+/* *************** */
+#home{
+    position: relative;
+    bottom: 5rem;
+}
+
+#home .buttons-group{
+    margin: 2rem 0;
+    width: 50%;
+}
+#home .buttons-group a{
+    
+    color: var(--light);
+    border-radius: var(--radius);
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+#home .main-text{
+    max-width: 704px;
+    font-size: 60px;
+    margin-bottom: 2rem;
+}
+
+#home .secondary-text{
+    max-width: 704px;
+    font-size: 20px; 
+    margin: 2rem 0;
+}
+
+#home .btn-about{
+    border: 3px solid var(--secondary);
+}
+
+/* *************** */
+/* **** ABOUT **** */
+/* *************** */
+
+#about img{
+    height: 484px;
+    border-radius: var(--radius);
+    filter: drop-shadow(1rem 0 2rem #ecf0f3)
+}
+
+#about .about-content{
+    max-width: 522px;
+}
+
+/* *************** */
+/* ** SERVICES  ** */
+/* *************** */
+#services{
+    background-color: var(--primary-light);
+}
+
+#services .card{
+    border-radius: var(--radius);
+    border: none;
+    box-shadow: 2px 2px 10px 0px #09688633;
+
+    height: 434px;
+}
+
+#services .card-title{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--primary-dark);
+}
+
+#services .card-text{
+    font-size: 14px;
+    line-height: 2;
+    color: var(--dark);
+}
+
+#services .icon{
+    height: 52px;
+    width: 52px;
+    display: block;
+}
+
+#services .icon-project{
+    background: url("./assets/project-staffing-icon.svg") no-repeat;
+}
+
+#services .icon-permanent{
+    background: url("./assets/permanent-staffing-icon.svg") no-repeat;
+}
+
+#services .icon-payroll{
+    background: url("./assets/payroll-icon.svg") no-repeat;
+}
+
+#services .service-cards.container{
+    padding: 0;
+}
+
+
+/* *************** */
+/* *** CONTACT *** */
+/* *************** */
+
+#contact h4{
+  font-size: 1rem;  
+  color: var(--primary-dark);
+  font-weight: 700;
+}
+
+.contact-content{
+    /* position: relative;
+    right: 5rem; */
+    width: 95%;
+}
+
+.contact-icon{
+    height: 31px;
+    width: 31px;
+    display: block; 
+    margin-right: 1rem;
+    background-position: center center;
+}
+
+#contact .contact-email{
+    background: url("./assets/paper-plane-icon.svg") no-repeat;
+}
+#contact .contact-phone{
+    background: url("./assets/phone-icon.svg") no-repeat;
+}
+
+#contact #message{
+    height: 10rem;
+}
+
+#contact input{
+    text-align: left;
+}
+
+/* Select placeholder colour change not working */
+#contact .form-placeholder,
+option:disabled,
+select:required:invalid ,
+#contact input::placeholder,
+select > option{
+    color: #045C78;
+}
+
+#contact input,
+#contact select,
+#contact textarea{
+    padding: 0.7rem 1.5rem;
+    border-radius: var(--radius);
+    box-shadow: 2px 2px 10px 0px #09688633;
+    border: none;
+}
+
+
+/* *************** */
+/* *** FOOTER  *** */
+/* *************** */
+
+#footer{
+    background-color: var(--footer);
+}
+
+#footer .copyright{
+    color: #979797;
+}
+
+#footer .nvision{
+    color: var(--primary);
+}
